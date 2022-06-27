@@ -1,0 +1,186 @@
+<template>
+  <main class="content">
+    <div class="btn-function">
+      <button type="submit" class="btn-docs-box">
+        <router-link to="/service/" class="button">Вернуться назад</router-link>
+      </button>
+    </div>
+
+    <h1>Акт фиксации строительных недостатков</h1>
+    <div class="text-field">
+      <label class="text-field__label" for="num_section"
+        >Укажите количество предполагаемых описаний в таблице</label
+      >
+      <div class="dropdown">
+        <button class="dropbtn">Форма на 1 описаниe</button>
+        <div class="dropdown-content">
+          <router-link to="/service/act-corpus-section2"
+            >Форма на 2 описания</router-link
+          >
+          <router-link to="/service/act-corpus-section3"
+            >Форма на 3 описания</router-link
+          >
+          <router-link to="/service/act-corpus-section4"
+            >Форма на 4 описания</router-link
+          >
+          <router-link to="/service/act-corpus-section5"
+            >Форма на 5 описаний</router-link
+          >
+          <router-link to="/service/act-corpus-section6"
+            >Форма на 6 описаний</router-link
+          >
+          <router-link to="/service/act-corpus-section7"
+            >Форма на 7 описаний</router-link
+          >
+          <router-link to="/service/act-corpus-section8"
+            >Форма на 8 описаний</router-link
+          >
+          <router-link to="/service/act-corpus-section9"
+            >Форма на 9 описаний</router-link
+          >
+          <router-link to="/service/act-corpus-section10"
+            >Форма на 10 описаний</router-link
+          >
+          <router-link to="/service/act-corpus-section11"
+            >Форма на 11 описаний</router-link
+          >
+          <router-link to="/service/act-corpus-section12"
+            >Форма на 12 описаний</router-link
+          >
+          <router-link to="/service/act-corpus-section13"
+            >Форма на 13 описаний</router-link
+          >
+          <router-link to="/service/act-corpus-section14"
+            >Форма на 14 описаний</router-link
+          >
+          <router-link to="/service/act-corpus-section15"
+            >Форма на 15 описания</router-link
+          >
+          <router-link to="/service/act-corpus-section16"
+            >Форма на 16 описаний</router-link
+          >
+          <router-link to="/service/act-corpus-section17"
+            >Форма на 17 описаний</router-link
+          >
+          <router-link to="/service/act-corpus-section18"
+            >Форма на 18 описаний</router-link
+          >
+          <router-link to="/service/act-corpus-section19"
+            >Форма на 19 описаний</router-link
+          >
+          <router-link to="/service/act-corpus-section20"
+            >Форма на 20 описаний</router-link
+          >
+        </div>
+      </div>
+    </div>
+    <div class="container-functions-docs-box">
+      <form
+        action="https://lawyerageeva.ru/php/word-act-corpus-section.php"
+        method="POST"
+        enctype="multipart/form-data"
+        class="form-docs"
+        id="form"
+      >
+        <div class="text-field">
+          <label class="text-field__label" for="num_section"
+            >Введите секцию дома где составляется акт</label
+          >
+          <input
+            class="text-field__input_times"
+            type="number"
+            name="num_section"
+            id="num_section"
+            autocomplete="off"
+            required
+          />
+          <div class="text-field__message"></div>
+        </div>
+
+        <div class="text-field">
+          <label class="text-field__label" for="num_corpus"
+            >Введите корпус дома где составляется акт</label
+          >
+          <input
+            class="text-field__input_times"
+            type="number"
+            name="num_corpus"
+            id="num_corpus"
+            autocomplete="off"
+            required
+          />
+          <div class="text-field__message"></div>
+        </div>
+
+        <div class="text-field">
+          <label class="text-field__label" for="num_build_corpus"
+            >Введите строительный корпус дома где составляется акт</label
+          >
+          <input
+            class="text-field__input_times"
+            type="number"
+            name="num_build_corpus"
+            id="num_build_corpus"
+            autocomplete="off"
+            required
+          />
+          <div class="text-field__message"></div>
+        </div>
+
+        <div class="text-field">
+          <label class="text-field__label" for="floor"
+            >Введите этаж где составляется акт</label
+          >
+          <input
+            class="text-field__input_times"
+            type="number"
+            name="floor"
+            id="floor"
+            min="-2"
+            autocomplete="off"
+            required
+          />
+          <div class="text-field__message"></div>
+        </div>
+
+        <div class="box-desc-img">
+          <div class="text-field">
+            <label class="text-field__label" for="description_problem"
+              >Введите точное описание недостатка</label
+            >
+            <textarea
+              class="text-field__input"
+              type="textarea"
+              name="description_problem"
+              id="description_problem"
+              autocomplete="off"
+              required
+            />
+            <div class="text-field__message"></div>
+          </div>
+
+          <div class="text-field">
+            <label class="text-field__label" for="image"
+              >Прикрепите фотографию недостатка</label
+            >
+            <input
+              class="text-field__input_file"
+              type="file"
+              name="file"
+              id="image"
+              accept=".jpg, .jpeg, .png, .gif"
+              required
+            />
+            <div class="text-field__message"></div>
+          </div>
+        </div>
+
+        <div class="btn-function">
+          <button type="submit" class="btn-docs-box">
+            <div class="title-docs">Создать документ</div>
+          </button>
+        </div>
+      </form>
+    </div>
+  </main>
+</template>
