@@ -1,7 +1,19 @@
-# Vue 3 + Vite
+# Прототип сервиса генерации юридических документов для моей жены
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Данный сервис предназначен для клиентов юридических услуг и для юристов в области жилищного права. Главный функционал сервиса заключается в том, что пользователь вводя всю необходимую информацию указанную в форме, в конечном счете получает юридически грамотный документ, который можно отправлять в суд и иже с ним стоящие инстанции.
+<br>
+Для этого с помощью PHP библиотеки - PhpWord, написал функцию, которая обрабатывает теги в файле формата docx и подставляет значения из формы на сайте, далее после того как пользователь внесет всю необходимую информацию в форму, данная функция позволяет скачать документ с измененными тегами на значения пользователя.
 
-## Recommended IDE Setup
+## Прототип залит на GitHub Pages
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+- [Генератор документов](https://vasiliygroo.github.io/service/)
+
+## Стек технологий
+
+- Vite.js
+
+- Vue.js (Router-link, router-view)
+
+- PHP (библиотека PhpOffice/PhpWord)
+
+- CSS
